@@ -1,0 +1,695 @@
+/*overwriting some styles*/
+
+.img-responsive{
+    width: 50%;
+    height: auto;
+}
+html{
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+
+.div-placer{
+    position: relative;
+}
+
+/* General styles for all menus */
+.cbp-spmenu {
+	background: #ed6c27;
+	position: fixed;
+}
+.cbp-spmenu a{
+    text-decoration: none;
+}
+.cbp-spmenu h3 {
+	color: #fff;
+	font-size: 1.9em;
+	padding: 20px;
+	margin: 0;
+	font-weight: 300;
+	background: #ed6c27;
+}
+
+.cbp-spmenu a {
+	display: block;
+	color: #fff;
+	font-size: 1.1em;
+	font-weight: 300;
+    transition: .3s all linear;
+}
+
+.cbp-spmenu a:hover {
+	background: #ef5604;
+    box-shadow: inset 1px 0px 6px #5F5A5A;
+}
+
+.cbp-spmenu a:active {
+	background: #afdefa;
+	color: #ed6c27;
+}
+
+/* Orientation-dependent styles for the content of the menu */
+
+.cbp-spmenu-vertical {
+	width: 240px;
+	height: 100%;
+	top: 0;
+	z-index: 1000;
+}
+
+.cbp-spmenu-vertical a {
+	border-bottom: 1px solid #fff;
+	padding: 1em;
+}
+
+.cbp-spmenu-horizontal {
+	width: 100%;
+	height: 150px;
+	left: 0;
+	z-index: 1000;
+	overflow: hidden;
+}
+
+.cbp-spmenu-horizontal h3 {
+	height: 100%;
+	width: 20%;
+	float: left;
+}
+
+.cbp-spmenu-horizontal a {
+	float: left;
+	width: 20%;
+	padding: 0.8em;
+	border-left: 1px solid #258ecd;
+}
+
+.cbp-spmenu-right {
+	right: -240px;
+}
+
+.cbp-spmenu-right.cbp-spmenu-open {
+	right: 0px;
+}
+
+/* Transitions */
+
+.cbp-spmenu,
+.cbp-spmenu-push {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+/* buffer styling */
+
+.buffer-layer.top{
+    height: 10vh;
+    width: 100vw;
+}
+/* menu button styling */
+.popover-button{
+    right: 0px;
+    padding: 25px 40px;
+    z-index: 10000;
+    -webkit-appearance:none;
+    appearance:none;
+    background: none;
+    outline: none;
+    border: none;
+}
+.popover-button span{
+    transition: all 250ms ease-in-out;
+    display: block;
+    opacity: 1;
+    width: 30px;
+    height: 3px;
+    background-color: #ed6c27;
+    margin: 3px 0;
+}
+
+.white-buttons span{
+    background-color: #fff;
+}
+
+
+.scrollmagic-pin-spacer{
+  top: auto;
+  left: 0px;
+  bottom: auto;
+  right: auto;
+  margin: auto;
+  display: block;
+  position: relative;
+  box-sizing: content-box;
+  min-width: 100px; width:
+  auto; min-height: 1030px;
+  height: auto;
+  padding-top: 980px;
+  padding-bottom: 0px;
+}
+
+#trigger{
+    position: fixed;
+    top: 50%;
+    width: 10px;
+    height: 1px;
+    background: white;
+}
+
+
+/* screen one styling */
+.one{
+    height: 90vh !important;
+}
+.one,.buffer-layer.top{
+    background: #f7f4f1;
+}
+.cloud-w-baloon{
+    position: relative;
+    left: 30%;
+}
+
+.cloud-outline{
+    position: relative;
+}
+
+.cloud-outline img{
+    position: absolute;
+    top: 110px;
+    left: -50px;
+}
+.overlay-img{
+    position: absolute;
+}
+.overlay-img.cloud{
+    left: 0;
+    top: 0;
+    z-index: 2;
+    position: absolute;
+    animation-name: bobbingAnim;
+    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    -webkit-animation-name: bobbingAnim;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-play-state: running;
+}
+.overlay-img.baloon{
+    left: 175px;
+    top: 40px;
+    z-index: 1;
+    position: absolute;
+    animation-name: bobbingAnim;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    -webkit-animation-name: bobbingAnim;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-play-state: running;
+}
+
+.special-header{
+    width: 80%;
+    display: block;
+    margin: 20% auto 0;    
+}
+.filler-div .div-placer{
+    position: relative;
+}
+
+.div-placer.landing img{
+    position: absolute;
+    left: -20px;
+    top: -30px;
+}
+@media only screen and (max-width: 1366px){
+  .special-header{
+      margin: 30% auto 0;
+  } 
+   .img-responsive{
+       width: 40%;
+   } 
+   
+}
+
+.dash-orange{
+    display: block;
+    background: #ff8f00;
+    width: 50px;
+    height: 5px;
+    margin: 5% auto;
+}
+/*screen two styling */
+
+.two .buffer-layer{
+    height: 20%;
+}
+.two{
+    background: #f7f4f1;
+}
+
+.div-placer.coins img{
+    position: absolute;
+}
+.div-placer.coins .flying-coin{
+    right: 50px;
+    -webkit-transform: scale(.7);
+    position: absolute;
+    animation-name: bobbingAnim;
+    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    -webkit-animation-name: bobbingAnim;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-play-state: running;
+}
+.div-placer.coins .flying-coin.little-brother{
+    right: -75px;
+    top: 90px;
+    -webkit-transform: scale(1);
+    position: absolute;
+    animation-name: bobbingAnim;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    -webkit-animation-name: bobbingAnim;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-play-state: running;
+}
+
+.view-report-button{
+    background-image: url(../img/tools_assets/_0000_green-note.png);
+    background-size: cover;
+    background-size: 100%;
+    height: 120px;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+.calculate-salary-button{
+    background-image: url(../img/tools_assets/_0001_golden-note.png);
+    background-size: cover;
+    background-size: 100%;
+    height: 120px;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+.view-report-button p, .calculate-salary-button p{
+    text-align: center;
+    /* padding-top: 14%; */
+    font-size: 1.2em;
+    font-weight: 600;
+    line-height: 75px;
+}
+
+.view-report-button p{
+    color: #1fa68c;
+}
+
+.calculate-salary-button p{
+    color: white;
+}
+/* third styling */
+/*chrstines styling commented */
+/*.notes{
+    display: block;
+    width: 150px;
+    height: 60px;
+    background: green;
+    position: relative;
+    margin: auto;
+    top: 0px;
+    left: 0px;
+    bottom: auto;
+    right: auto;
+}*/
+
+.three{
+    background: rgba(248,152,29,1);
+background: -moz-linear-gradient(top, rgba(248,152,29,1) 0%, rgba(252,125,41,1) 50%, rgba(252,125,41,1) 51%, rgba(251,126,41,1) 71%, rgba(255,98,52,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(248,152,29,1)), color-stop(50%, rgba(252,125,41,1)), color-stop(51%, rgba(252,125,41,1)), color-stop(71%, rgba(251,126,41,1)), color-stop(100%, rgba(255,98,52,1)));
+background: -webkit-linear-gradient(top, rgba(248,152,29,1) 0%, rgba(252,125,41,1) 50%, rgba(252,125,41,1) 51%, rgba(251,126,41,1) 71%, rgba(255,98,52,1) 100%);
+background: -o-linear-gradient(top, rgba(248,152,29,1) 0%, rgba(252,125,41,1) 50%, rgba(252,125,41,1) 51%, rgba(251,126,41,1) 71%, rgba(255,98,52,1) 100%);
+background: -ms-linear-gradient(top, rgba(248,152,29,1) 0%, rgba(252,125,41,1) 50%, rgba(252,125,41,1) 51%, rgba(251,126,41,1) 71%, rgba(255,98,52,1) 100%);
+background: linear-gradient(to bottom, rgba(248,152,29,1) 0%, rgba(252,125,41,1) 50%, rgba(252,125,41,1) 51%, rgba(251,126,41,1) 71%, rgba(255,98,52,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8981d', endColorstr='#ff6234', GradientType=0 );
+}
+.note-placer{
+    width: 150px;
+    height: 60px;
+    display: block;
+    margin: 0 auto;
+    z-index: 10000;
+}
+figcaption{
+    color: white;
+}
+.grey-box{
+    background: #2a2a2e;
+    color: white;
+    display: block;
+    margin: 35px auto;
+    border-radius: 2px;
+    transition: .3s all linear;
+    opacity: 0;
+}
+.grey-box p{
+    padding: 10px;
+}
+
+.grey-circle{
+    background: #57575a;
+    border: 3px solid white;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    transition: .3s all linear;
+    opacity: 0;
+}
+.grey-box.visible,.grey-circle.visible,.animated#rtoolmain  #rtool{
+    opacity: 1;
+}
+.grey-circle p{
+    position: absolute;
+    top: 50px;
+    left: 25px;
+    width: 150px;
+}
+
+.caption-holder{
+    position: relative;
+    float: left;
+    margin-left: 80%;
+    margin-top: -140%;
+}
+#rtoolmain.animated > .floating-money-animatable{
+    position: relative;
+    transition: .3s all linear;
+    opacity: 0;
+    position: absolute;
+    animation-name: bobbingAnim;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    -webkit-animation-name: bobbingAnim;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-play-state: running;
+}
+
+@keyframes bobbingAnim {
+   0% {
+       transform: translate(0px, 0px);
+       animation-timing-function:ease-in-out
+   }
+
+   50% {
+       transform: translate(0px, 12px);
+       animation-timing-function:ease-in-out
+   }
+
+   100% {
+       transform: translate(0px, 0px);
+       animation-timing-function:ease-in-out
+   }
+}
+
+@-webkit-keyframes bobbingAnim {
+   0% {
+       -webkit-transform: translate(0px, 0px);
+       -webkit-animation-timing-function:ease-in-out
+   }
+
+   50% {
+       -webkit-transform: translate(0px, 12px);
+       -webkit-animation-timing-function:ease-in-out
+   }
+
+   100% {
+       -webkit-transform: translate(0px, 0px);
+       -webkit-animation-timing-function:ease-in-out
+   }
+}
+#rtoolmain.animated .floating-money-animatable{
+    opacity: 1;                                                        
+}
+.floating-money-animatable img{
+    position: absolute;
+    top: -120px;
+    left: 150px;
+}
+#rtool{
+    padding: 10px;
+}
+
+#rtoolf img{
+    float: left;
+}
+
+#rptool{
+    margin-left: -45%;
+    margin-top: -140%;
+}
+
+#srptool{
+    padding: 20px;
+}
+.note-placer .notes{
+    width: 150px;
+    height: 60px;
+    background-image: url(../img/tools_assets/_0000_green-note.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.note-placer .notes.gold{
+    background-image: url(../img/tools_assets/_0001_golden-note.png);
+}
+.note-placer .notes.gold p{
+    color: white;
+}
+.scrollmagic-pin-spacer{
+    z-index: 10000;
+}
+.notes p{
+    text-align: center;
+    width: 150px;
+    font-size: 20px;
+    line-height: 60px;
+    color: #1fa68c;
+}
+
+.salary-by-tools img{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+.inner{
+    position: relative;
+    padding-top: 15%;
+}
+.center{
+    margin: 0 auto;
+}
+
+.services{
+    height: 200px;
+    width: auto;
+}
+.vc{
+    margin-top: 50%;
+}
+
+.row.buffer{
+    height: 10%;
+}
+
+.tech-box figure{
+    padding: 20px;
+    margin-top: -20px;
+}
+figure img{
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    z-index: 100;
+}
+figcaption{
+    text-align: center;
+}
+.outer-wrapper,.outer-wrapper .col-md-6{
+    height: 100%
+}
+
+.outer-wrapper .col-md-6 .row{
+    border-right: 2px solid white;
+}
+.col-md-6 .row{
+    height: 10%;
+}
+
+
+.tech-box.left{
+    float: left;
+    margin-left: 25%;
+    margin-top: 5%;
+    width: 300px;
+    
+}
+.tech-box.right{
+    float: left;
+    margin-right: 5%;
+    margin-top: 5%;
+    width: 300px;
+    
+}
+
+.connector-line-left{
+    height: 2px;
+    width: calc(100% - 25% - 300px);
+    float: left;
+    margin-top: calc(5% + 85px);
+    border: 1px solid white;
+}
+.connector-line-left::before{
+    content: '|';
+    color: white;
+    position: relative;
+    top: -11.25px;
+    left: -3px;
+}
+.connector-line-right{
+    height: 2px;
+    width: calc(100% - 25% - 300px);
+    float: left;
+    margin-top: calc(5% + 85px);
+    border: 1px solid white;
+}
+.connector-line-right::after{
+    content: '|';
+    color: white;
+    position: relative;
+    top: -11.25px;
+    right: -100%;
+}
+
+
+/* fourth screen */
+
+.moving-background{
+    background-image: url(../img/tech_assets/tech.png);
+    height: 100%;
+    background-size: cover;
+    top: 0px !important;
+}
+.layer1{
+    position: relative;
+    
+}
+
+.win-width-sections{
+    margin-top: -56vh;
+}
+.note-placer.vertical{
+    position: fixed;
+    opacity: 0;
+    transition: .3s all linear;
+    left: 45%;
+    /*margin-left: -75px;*/
+    top: 60vh;
+    /*margin-top: -5px;*/
+}
+.note-placer.vertical.visible{
+    opacity: 1;
+}
+#long-last-payment{
+    opacity:0 ;
+}
+#long-last-payment.visible{
+    opacity: 1;
+}
+.horizontal-buffer{
+    height: 100vh;
+    width: 100vw;
+}
+
+#first-tech-holder{
+    position: relative;
+    opacity: 0;
+    transition: .4s all linear;
+}
+#first-tech-holder.visible{
+    opacity: 1;
+}
+#first-tech-holder img{
+    position: absolute;
+    height: 400px;
+    top: calc(55vh - 250px);
+    left: 20%;
+}
+
+@media only screen and (max-width: 1440px){
+  #slideContainer{
+      background-position-x: 10%;
+  }
+   
+}
+
+
+
+
+
+
+
+
+
+
+/* for testing --*/
+
+.scrolling-buttons-section{
+	margin-top:5%;
+}
+
+.layer1{
+	display:none;
+}
+.scrollmagic-pin-spacer{
+    z-index: 100 !important;
+}
+
+#five{
+	display:none;
+}
+
+#pinContainer {
+		width: 100%;
+		height: 100%;
+		
+		-webkit-perspective: 1000;
+		        perspective: 1000;
+	}
+	#slideContainer {
+		width: 400%; /* to contain 4 panels, each with 100% of window width */
+		height: 100%;
+        background-image: url(../img/tech_assets/tech.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+	}
+	.panel {
+		height: 100%;
+		width: 25%; /* relative to parent -> 25% of 400% = 100% of window width */
+		float: left;
+        background: none;
+	}
